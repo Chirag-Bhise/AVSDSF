@@ -61,11 +61,9 @@ To evaluate the effectiveness of the proposed **AVSDSF** framework, including it
 
 These results demonstrate that AVSDSF not only reduces AV service latency but also scales efficiently with mobility and workload dynamics in real-time edge environments.
 
-> Detailed evaluation plots, testbed setup, and dataset details will be included in the `results/` directory in future updates.
-
 ### Compiling & Running :
 All programs are written in C++ and can be compiled and executed using a standard g++ environment, using the command : '
 g++ filename.cpp -o output_file' to compile and './output_file' to run.
 
 ### Empirical Analysis :
-In addition to the C++ implementations, the repository includes a Jupyter Notebook named 'Illustrations.ipynb' which contains illustrative graphs and plots.It is the analysis based on empirical data collected from running both the basic and modified versions of the source code. A comparative evaluation of the implemented algorithms has been done. This notebook is useful for understanding the performance and security trade-offs among different approaches through visualizations and data summaries.
+In addition to the C++ implementations, the repository includes a Jupyter Notebook named 'Illustrations.ipynb' which contains illustrative graphs and plots. It is the analysis based on empirical data collected from running both the basic and modified versions of the source code. A comparative evaluation of the implemented algorithms has been done. This notebook is useful for understanding the performance among different approaches through visualizations and data summaries.
