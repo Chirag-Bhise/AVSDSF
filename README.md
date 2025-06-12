@@ -1,7 +1,5 @@
 # AVSDSF: Autonomous Vehicle Services Deployment and Scheduling Framework
 
-**C++ Implementation Repository for Research Work**
-
 ## Overview
 
 Autonomous Vehicle Services Deployment and Scheduling Framework (**AVSDSF**) is a novel edge-computing framework designed to optimize the deployment and scheduling of AV service images in Intelligent Transportation Systems (ITS). This framework specifically addresses AV mobility, service latency, and edge resource utilization using a dual-algorithmic approach.
@@ -9,8 +7,8 @@ Autonomous Vehicle Services Deployment and Scheduling Framework (**AVSDSF**) is 
 This repository contains the **C++ implementations** of the proposed algorithms as introduced in our research:
 
 - **AVSDSF (Framework)**
-  - **BS-PAD Algorithm**: Base Station Prefetching and AV Deployment
-  - **RS-MAS Algorithm**: RSU Scheduling based on Mobility and AV Services
+  - **Base Station (BS) Algorithm**: Base Station Prefetching and AV Deployment
+  - **Roadside Unit (RSU)  Algorithm**: RSU Scheduling based on Mobility and AV Services
 
 ## Abstract
 
@@ -37,15 +35,37 @@ Our framework, when compared to state-of-the-art solutions (ONCO, PBO, PAGURUS, 
 - **Mobility-aware and service-driven edge deployment**
 - **Reduced latency and cloud dependency**
 - **Improved RSU resource fairness and load balancing**
+## Performance Evaluation
 
-## Repository Structure
+To evaluate the effectiveness of the proposed **AVSDSF** framework, including its two key algorithms—**BS-PAD** and **RS-MAS**—we conducted extensive simulations and performance comparisons against several state-of-the-art solutions:
 
-```bash
-├── base_station/               # BS-PAD Algorithm
-│   └── bs_pad.cpp
-├── roadside_unit/             # RS-MAS Algorithm
-│   └── rs_mas.cpp
-├── data/                      # Sample input datasets or logs
-├── results/                   # Output logs and evaluation data
-├── README.md
-└── LICENSE
+- **ONCO** 
+- **PBO** 
+- **PAGURUS**
+- **MMTO**
+- **LDLS**
+
+### Evaluation Highlights:
+
+- **AV Service Handling Success Rate**:
+  - AVSDSF improved overall service request success by **47.47%** over existing solutions.
+  
+- **High-Priority Service Fulfillment**:
+  - For time-critical or priority requests, AVSDSF outperformed other approaches with a **23.99%** higher success rate.
+
+- **Service Image Distribution Time**:
+  - AVSDSF achieved a **38.67% reduction** in image distribution latency compared to other methods.
+
+- **Resource Utilization**:
+  - The proposed framework ensured **fairer and more efficient utilization of RSU resources**, minimizing both overloading and underutilization.
+
+These results demonstrate that AVSDSF not only reduces AV service latency but also scales efficiently with mobility and workload dynamics in real-time edge environments.
+
+> Detailed evaluation plots, testbed setup, and dataset details will be included in the `results/` directory in future updates.
+
+### Compiling & Running :
+All programs are written in C++ and can be compiled and executed using a standard g++ environment, using the command : '
+g++ filename.cpp -o output_file' to compile and './output_file' to run.
+
+### Empirical Analysis :
+In addition to the C++ implementations, the repository includes a Jupyter Notebook named 'Illustrations.ipynb' which contains illustrative graphs and plots.It is the analysis based on empirical data collected from running both the basic and modified versions of the source code. A comparative evaluation of the implemented algorithms has been done. This notebook is useful for understanding the performance and security trade-offs among different approaches through visualizations and data summaries.
