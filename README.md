@@ -66,4 +66,4 @@ All programs are written in C++ and can be compiled and executed using a standar
 g++ filename.cpp -o output_file' to compile and './output_file' to run.
 
 ### Empirical Analysis :
-In addition to the C++ implementations, the repository includes a Jupyter Notebook named 'Illustrations.ipynb' which contains illustrative graphs and plots. It is the analysis based on empirical data collected from running both the basic and modified versions of the source code. A comparative evaluation of the implemented algorithms has been done. This notebook is useful for understanding the performance among different approaches through visualizations and data summaries.
+In addition to the C++ implementations, the repository includes a Jupyter Notebook named 'AVSDSF_illustrations.ipynb' which contains illustrative graphs and plots. It is the analysis based on empirical data collected from running both the basic and modified versions of the source code. A comparative evaluation of the implemented algorithms has been done. This notebook is useful for understanding the performance among different approaches through visualizations and data summaries.
